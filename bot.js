@@ -9,6 +9,13 @@ const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const prefix = '6';
 
 
+client.on('ready', () => { //code bot not leave room voice //Bot Is Online
+    client.channels.get("519992370389975041").join(); //by : ....
+});
+
+
+
+
 client.on('message', function(message) {
 	const myID = "486200045008453635";
     let args = message.content.split(" ").slice(1).join(" ");
